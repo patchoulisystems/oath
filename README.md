@@ -1,4 +1,4 @@
-# Simple Oath Demo
+# Simple Oauth Demo
 ### Registration Config
 https://console.cloud.google.com/apis
 
