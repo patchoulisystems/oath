@@ -5,8 +5,8 @@
 <body>
     <script>
         var YOUR_CLIENT_ID = '684917651846-coqm1o7h4ujbaridhd0v5f065a01ons3.apps.googleusercontent.com';
-        var YOUR_REDIRECT_URI = 'http://localhost';
-        //var YOUR_REDIRECT_URI = 'http://m29.c3310.cyber.uml.edu:8080';
+        //var YOUR_REDIRECT_URI = 'http://localhost';
+        var YOUR_REDIRECT_URI = 'http://m29.c3310.cyber.uml.edu:8080';
         var fragmentString = location.hash.substring(1);
 
         // Parse query string to see if page request is coming from OAuth 2.0 server.
@@ -81,7 +81,7 @@
             var params = {
                 'client_id': YOUR_CLIENT_ID,
                 'redirect_uri': YOUR_REDIRECT_URI,
-                'scope': 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid',
+                'scope': 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile',// openid',
                 'state': 'try_sample_request',
                 'include_granted_scopes': 'true',
                 'response_type': 'token'
